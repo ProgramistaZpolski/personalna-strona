@@ -43,6 +43,11 @@ header {
     margin-bottom: 10vh;
 }
 
+header h1 {
+    font-size: 3.2em;
+    line-height: 1.7;
+}
+
 .hidder {
     filter: opacity(0.0);
     transition: filter 50ms;

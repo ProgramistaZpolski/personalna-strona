@@ -7,6 +7,11 @@
     <title>Strona ProgramistyZpolski</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/projects.css">
+    <style id="themeStyle">
+        :root {
+            --theme-applied: "normal";
+        }
+    </style>
 </head>
 
 <body>
@@ -14,6 +19,34 @@
         <h1>Projekty</h1>
     </header>
     <main>
+        <div class="flexcards">
+            <div class="card card1" onclick="window.location = './projects/covid.html';">
+                <img src="./img/project23.webp" loading="lazy" alt="Zakażenia COVID">
+                <h1>Zakażenia COVID</h1>
+            </div>
+            <div class="card card2" onclick="window.location = './projects/pzpljs.html';">
+                <img src="./img/project24.webp" loading="lazy" alt="pzplJS">
+                <h1>pzplJS</h1>
+            </div>
+            <div class="card card3" onclick="window.location = './projects/scriptchapta.html';">
+                <img src="./img/project25.webp" loading="lazy" alt="ScriptChapta">
+                <h1>scriptCaptcha</h1>
+            </div>
+        </div>
+        <div class="flexcards">
+            <div class="card card1" onclick="window.location = './projects/unsplash.html';">
+                <img src="./img/project22.webp" loading="lazy" alt="My Unsplash">
+                <h1>My Unsplash</h1>
+            </div>
+            <div class="card card2" onclick="window.location = './projects/imgupd.html';">
+                <img src="./img/project21.webp" loading="lazy" alt="Image uploader">
+                <h1>Image Uploader</h1>
+            </div>
+            <div class="card card3" onclick="window.location = './projects/gjobs.html';">
+                <img src="./img/project20.webp" loading="lazy" alt="GitHub Jobs">
+                <h1>Github Jobs</h1>
+            </div>
+        </div>
         <div class="flexcards">
             <div class="card card1" onclick="window.location = './projects/pogoda.html';">
                 <img src="./img/project03.webp" loading="lazy" alt="Pogoda">
@@ -99,6 +132,7 @@
             </div>
         </div>
     </main>
+    <script src="./js/themeManagerSlim.js" defer></script>
 </body>
 
 </html>

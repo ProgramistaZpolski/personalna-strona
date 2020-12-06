@@ -75,7 +75,7 @@ main img {
     width: 50%;
 }
 
-.btn {
+.btn { /* i just used the standart bootstrap buttons, didn't have an idea for a better button */
     display: inline-block;
     font-weight: 400;
     color: #212529;

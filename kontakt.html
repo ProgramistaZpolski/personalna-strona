@@ -7,17 +7,93 @@
     <title>Strona ProgramistyZpolski</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <style id="themeStyle">
+        :root {
+            --theme-applied: "normal";
+        }
+    </style>
 </head>
 
 <body>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="./index.html" class="nav-link">
+                    <span class="link-text lang" id="navbar-home"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z" />
+                            <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        </svg> Strona Domowa</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="./projects.html" class="nav-link">
+                    <span class="link-text"><svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0zm-.999-3.124a.5.5 0 0 1 .33.625l-4 13a.5.5 0 0 1-.955-.294l4-13a.5.5 0 0 1 .625-.33z" />
+                        </svg> Projekty</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <span class="link-text"><svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                        </svg> Kontakt</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a onclick="alert('W trakcie budowy!');" class="nav-link">
+                    <span class="link-text"><svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm2 9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                        </svg> O mnie</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:$homepage.modalToggle();" class="nav-link">
+                    <span class="link-text"><svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z" />
+                        </svg> Ustawienia</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <header>
         <h1>Kontakt</h1>
     </header>
     <main>
-        <h2>E-Mail: piotrbadelek@protonmail.com<br>
+        <h2>E-Mail: <a href="mailto:piotrbadelek@protonmail.com">piotrbadelek@protonmail.com</a><br>
         Discord: ProgramistaZpolski#9847<br>
-        GitHub: @ProgramistaZpolski</h2>
+        GitHub: <a href="https://github.com/programistazpolski/">@ProgramistaZpolski</a></h2>
     </main>
+    <div class="modal" data-utils-homepage-modal="hidden">
+        <fieldset>
+            <legend>Ustawienia</legend>
+            <input type="button" name="normalTheme" id="normalTheme" data-theme-set="normal"
+                onclick="themeManager.setTheme(this);" value="✓">
+            <label for="normalTheme">Normalny Motyw</label>
+            <input type="button" name="winterTheme" id="winterTheme" data-theme-set="winter"
+                onclick="themeManager.setTheme(this);" value="✓">
+            <label for="winterTheme">Zimowy motyw</label><br><br>
+            <button onclick="$homepage.modalToggle();" class="btn btn-normal">Zamknij</button>
+        </fieldset>
+    </div>
+    <script src="./js/themeManager.js" defer></script>
+    <script src="./js/utils_common.js"></script>
+    <!-- Ta strona orginalnie była kompletnie inna niż index.html,
+    ale korzystała z pliku style indexu, więc wraz z dodaniem navbara strona ta wyglądała dziwnie,
+    i zamiast tworzyć osobny style, poprostu dodałem skrypty z indexu i navbara /shrug
+    orginalnie planowałem zrobić modala na indexie, i za pomocą pzplJS fetchować ten plik, ale skrypty się by
+    pewnie pogryzły i zapadły w depresję.
+    Pozatym nie można by było wysłać linku do kontaktu, chyba że ręcznie odkryjesz że kontakt jest w pliku kontakt.html
+    a i tak wtedy by nie było stylów na tej stronie, więc strona by wyglądała jak z 1995 roku -->
 </body>
 
 </html>
